@@ -625,4 +625,9 @@
 
     <!-- Specify custom blanking delay of the display -->
     <integer name="config_screen_off_delay">0</integer>
+
+    <!-- Sets the package name for device parts-->
+    <string name="configdevicepartspackagename" translatable="false">org.lineageos.settings</string>
+    <string name="configdevicepartspackageactivity" translatable="false">org.lineageos.settings.device.DOZE_SETTINGSy</string>
+
 </resources>
