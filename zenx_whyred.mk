@@ -28,10 +28,10 @@ $(call inherit-product, device/xiaomi/whyred/device.mk)
 # Inherit from custom vendor
 $(call inherit-product, vendor/MiuiCamera/config.mk)
 
-# Inherit some common Havoc stuff.
-$(call inherit-product, vendor/havoc/config/common_full_phone.mk)
+# Inherit some common Zenx-OS stuff.
+$(call inherit-product, vendor/zenx/config/common_full_phone.mk)
 
-PRODUCT_NAME := havoc_whyred
+PRODUCT_NAME := zenx_whyred
 PRODUCT_BRAND := Xiaomi
 PRODUCT_DEVICE := whyred
 PRODUCT_MANUFACTURER := Xiaomi
@@ -47,3 +47,11 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 BUILD_FINGERPRINT := google/coral/coral:10/QQ3A.200805.001/6578210:user/release-keys
 
 TARGET_VENDOR := Xiaomi
+
+# Welcome in Gapps word!
+TARGET_GAPPS_ARCH := arm64
+IS_PHONE := true
+TARGET_BOOT_ANIMATION_RES := 1080
+
+# Google Recorder
+TARGET_SUPPORTS_GOOGLE_RECORDER := true

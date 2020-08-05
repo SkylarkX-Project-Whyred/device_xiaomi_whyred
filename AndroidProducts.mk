@@ -14,4 +14,10 @@
 # limitations under the License.
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/havoc_whyred.mk
+    $(LOCAL_DIR)/zenx_whyred.mk
+
+
+COMMON_LUNCH_CHOICES := \
+    zenx_whyred-user \
+    zenx_whyred-userdebug \
+    zenx_whyred-eng
